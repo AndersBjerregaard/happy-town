@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <h1>Hello World!</h1>
+  <h1 class="text-3xl font-bold underline">Main App</h1>
   <RouterView />
 </template>
 

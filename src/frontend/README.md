@@ -44,3 +44,50 @@ npm run build
 ```sh
 npm run lint
 ```
+
+# Tailwind Setup
+
+[Source page](https://tailwindcss.com/docs/installation)
+
+## Install Tailwind CSS
+
+Install `tailwindcss` via npm, and create your `tailwind.config.js` file.
+
+```
+npm install -D tailwindcss
+npx tailwindcss init
+```
+
+## Configure your template paths (Unverified)
+
+Add the paths to all of your template files in your `tailwind.config.js` file.
+
+```
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./src/**/*.{html,js,ts,vue}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+## Add the Tailwind directives to your CSS
+
+Add the `@tailwind` directives for each of Tailwind's layers to your main CSS file. (`src/assets/main.css`)
+
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities:
+```
+
+## Start the Tailwind CLI build process
+
+Run the CLI tool to scan your template files for classes and build your CSS.
+Notice as this is a continuous process, and will consume your terminal session.
+
+```
+npx tailwindcss -i ./src/assets/main.css -o ./src/assets/output.css --watch
+```
