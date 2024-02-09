@@ -17,9 +17,11 @@ services:
   pgadmin:
     image: dpage/pgadmin4:7
     environment:
-      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL} 
-      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD} 
+      PGADMIN_DEFAULT_EMAIL: don-sbn@hotmail.com
+      PGADMIN_DEFAULT_PASSWORD_FILE: /run/secrets/pg_password
       PGADMIN_LISTEN_PORT: 80
+    secrets:
+      - pg_password
     ports:
       - 15432:80
     depends_on:
@@ -32,6 +34,8 @@ secrets:
     file: db_user.txt
   db_password:
     file: db_password.txt
+  pg_password:
+    file: pg_password.txt
 
 networks:
   happy-town-network:
