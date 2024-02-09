@@ -1,6 +1,8 @@
-pub mod user_endpoints;
-
 use rocket::{fairing::{Fairing, Info, Kind}, http::Header, Request, Response};
+
+mod users;
+
+pub use crate::users::endpoints;
 
 #[macro_use] extern crate rocket;
 
@@ -32,7 +34,14 @@ impl Fairing for CORS {
 async fn main() -> Result<(), rocket::Error> {
     let _rocket = rocket::build()
         .attach(CORS)
-        .mount("/", routes![index])
+        .mount("/", routes![
+            index,
+            users::endpoints::get_users,
+            users::endpoints::get_user,
+            users::endpoints::user_options,
+            users::endpoints::create_user,
+            users::endpoints::update_user,
+            users::endpoints::delete_user])
         .launch()
         .await?;
 
