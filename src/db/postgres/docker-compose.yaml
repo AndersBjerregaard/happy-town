@@ -5,8 +5,12 @@ services:
     image: postgres:16
     restart: on-failure
     environment:
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD} 
+      POSTGRES_USER_FILE: /run/secrets/db_user
+      POSTGRES_PASSWORD_FILE: /run/secrets/db_password
       POSTGRES_DB: ${POSTGRES_DB} 
+    secrets:
+      - db_user
+      - db_password
     networks:
       - happy-town-network
 
@@ -22,6 +26,12 @@ services:
       - db
     networks:
       - happy-town-network
+
+secrets:
+  db_user:
+    file: db_user.txt
+  db_password:
+    file: db_password.txt
 
 networks:
   happy-town-network:

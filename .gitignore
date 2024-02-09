@@ -1,1 +1,3 @@
 /target
+src/db/postgres/db_password.txt
+src/db/postgres/db_user.txt

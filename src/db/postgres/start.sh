@@ -1,2 +1,2 @@
 #!/bin/bash
-docker compose --env-file ../../config/secrets.env --file ./docker-compose.yaml up --build -d
+docker compose --env-file --file ./docker-compose.yaml up --build -d
