@@ -2,3 +2,4 @@
 src/db/postgres/db_password.txt
 src/db/postgres/db_user.txt
 src/db/postgres/pg_password.txt
+src/user_service/private/

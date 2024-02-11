@@ -1,3 +1,5 @@
+use std::path::Path;
+
 use rocket::{fairing::{Fairing, Info, Kind}, http::Header, Request, Response};
 
 mod users;

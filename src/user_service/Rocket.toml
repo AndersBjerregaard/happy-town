@@ -1,12 +1,12 @@
 ## defaults for _all_ profiles
 [default]
-address = "0.0.0.0"
+address = "127.0.0.1"
 limits = { form = "64 kB", json = "1 MiB" }
 
 ## https://rocket.rs/v0.5/guide/configuration/#tls
 [default.tls]
-key = "./key.pem"
-certs = "./certs.pem"
+certs = "./private/cert.pem"
+key = "./private/key.pem"
 
 ## set only when compiled in debug mode, i.e, `cargo build`
 [debug]
@@ -14,8 +14,8 @@ port = 8080
 ## only the `json` key from `default` will be overridden; `form` will remain
 limits = { json = "10MiB" }
 
-## set only when the `nyc` profile is selected
-[nyc]
+## set only when the `staging` profile is selected
+[staging]
 port = 9001
 
 ## set only when compiled in release mode, i.e, `cargo build --release`
