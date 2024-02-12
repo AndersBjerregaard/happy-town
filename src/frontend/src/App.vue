@@ -6,8 +6,8 @@ import HomeView from './Views/HomeView.vue'
 <template>
     <header>
       <div class="header">
-        <div id="logo">
-          <img src="../src/assets/monkey-192x192.png"/>
+        <div>
+          <h1>Logo</h1>
         </div>
         <div id="title">
           <h1 class="main-title">Happy Town</h1>
@@ -24,26 +24,5 @@ import HomeView from './Views/HomeView.vue'
     <RouterView />
 </template>
 
-<style>
-p {
-  color: white;
-}
-.header {
-  height: auto;
-  width: 100%;
-  padding: 5em;
-  border: 5em;
-  margin: 5em;
-  display: flex;
-}
-.main-title {
-  color: white;
-  font-weight: bold;
-}
-#logo {
-  max-width: 192px;
-}
-#title {
-  width: 100%;
-}
+<style scoped>
 </style>
