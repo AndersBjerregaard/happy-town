@@ -15,7 +15,9 @@ import HomeView from './Views/HomeView.vue'
       </div>
     </header>
     <div class="home">
-      <HomeView/>
+      <main>
+        <HomeView/>
+      </main>
     </div>
     <div class="footer">
     <footer>

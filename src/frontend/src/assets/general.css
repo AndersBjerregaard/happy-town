@@ -4,6 +4,10 @@
   color: white;
 }
 
+p {
+  text-indent: 3rem;
+}
+
 body {
   background: black;
 }
@@ -13,6 +17,26 @@ body {
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.main-border {
+  width: 5px;
+  background: white;
+}
+
+.main-center {
+  width: 640px;
+  background: black;
+  margin-left: 50px;
+  margin-right: 50px;
+  /* display: flex; */
+  flex-flow: row nowrap;
 }
 
 .header {
