@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import CreateUser from '../components/CreateUserComponent.vue'
+  import CreateuserComponent from '../components/CreateUserComponent.vue';
 </script>
 
 <template>

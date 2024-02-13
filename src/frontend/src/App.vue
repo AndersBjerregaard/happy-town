@@ -14,14 +14,14 @@ import HomeView from './Views/HomeView.vue'
         </div>
       </div>
     </header>
-    <nav>
-      <p>Nav</p>
-    </nav>
+    <div class="home">
       <HomeView/>
+    </div>
+    <div class="footer">
     <footer>
       <p>Footer</p>
     </footer>
-    <RouterView />
+    </div>
 </template>
 
 <style scoped>
