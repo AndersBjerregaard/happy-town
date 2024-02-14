@@ -4,26 +4,24 @@ import HomeView from './Views/HomeView.vue'
 </script>
 
 <template>
-    <header>
-      <div class="header">
-        <div>
-          <h1>Logo</h1>
-        </div>
-        <div id="title">
-          <h1 class="main-title">Happy Town</h1>
-        </div>
-      </div>
-    </header>
-    <div class="home">
-      <main>
-        <HomeView/>
-      </main>
+  <div class="navbar">
+    <div class="navlink-container">
+      <router-link class="navlink" to="homeView">Home</router-link>
     </div>
-    <div class="footer">
+    <div class="navlink-container">
+      <router-link class="navlink" to="userView">User</router-link>
+    </div>
+  </div>
+  <div class="home">
+    <main>
+      <HomeView/>
+    </main>
+  </div>
+  <div class="footer">
     <footer>
       <p>Footer</p>
     </footer>
-    </div>
+  </div>
 </template>
 
 <style scoped>

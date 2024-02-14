@@ -2,6 +2,16 @@
 </script>
 
 <template>
+  <header>
+    <div class="header">
+      <div>
+        <h1>Logo</h1>
+      </div>
+      <div id="title">
+        <h1 class="main-title">Happy Town</h1>
+      </div>
+    </div>
+  </header>
   <div class="main">
     <div class="main-border">
     </div>
