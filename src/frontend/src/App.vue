@@ -6,15 +6,15 @@ import HomeView from './Views/HomeView.vue'
 <template>
   <div class="navbar">
     <div class="navlink-container">
-      <router-link class="navlink" to="homeView">Home</router-link>
+      <router-link class="navlink" to="/">Home</router-link>
     </div>
     <div class="navlink-container">
-      <router-link class="navlink" to="userView">User</router-link>
+      <router-link class="navlink" to="/user">User</router-link>
     </div>
   </div>
   <div class="home">
     <main>
-      <HomeView/>
+      <RouterView />
     </main>
   </div>
   <div class="footer">

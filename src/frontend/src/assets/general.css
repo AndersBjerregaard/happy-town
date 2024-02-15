@@ -12,18 +12,18 @@ body {
   background: black;
 }
 
-#app {
-  width: 780px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
-}
+/* #app { */
+/*   width: 780px; */
+/*   margin: 0 auto; */
+/*   padding: 2rem; */
+/*   font-weight: normal; */
+/* } */
 
 .navbar {
   background: #111111;
   position: fixed;
   top: 0;
-  width: 800px;
+  width: 100vw;
   z-index: 100;
   height: 50px;
   display: flex;
@@ -37,10 +37,18 @@ body {
   margin-top: 15px;
 }
 
+.home-header {
+  padding-top: 20px;
+}
+
 .main {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+}
+
+.main-title {
+  padding-top: 20px;
 }
 
 .main-border {

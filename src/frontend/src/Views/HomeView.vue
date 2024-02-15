@@ -3,12 +3,12 @@
 
 <template>
   <header>
-    <div class="header">
+    <div class="header home-header">
       <div>
         <h1>Logo</h1>
       </div>
-      <div id="title">
-        <h1 class="main-title">Happy Town</h1>
+      <div>
+        <h1>Happy Town</h1>
       </div>
     </div>
   </header>
