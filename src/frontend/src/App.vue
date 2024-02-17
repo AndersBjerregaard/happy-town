@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
+import apiUrl from './config';
+console.log('environment: ' + import.meta.env.MODE);
+console.log('api url: ' + apiUrl);
 </script>
 
 <template>
