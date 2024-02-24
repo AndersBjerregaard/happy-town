@@ -19,6 +19,24 @@ body {
 /*   font-weight: normal; */
 /* } */
 
+.users-main {
+
+}
+
+.users-list {
+  align-content: space-evenly;
+  justify-content: space-evenly;
+}
+
+.user-component {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-content: space-evenly;
+}
+
+.user-username-label {
+  padding-right: 5rem;
+}
 .navbar {
   background: #111111;
   position: fixed;

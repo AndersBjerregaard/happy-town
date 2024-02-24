@@ -5,8 +5,9 @@
 </script>
 
 <template>
-  <div>
-    <span>Username:      {{ username }}</span>
+  <div class="user-component">
+    <span class="user-username-label">Username:</span>
+    <span>{{ username }}</span>
   </div>
 </template>
 
