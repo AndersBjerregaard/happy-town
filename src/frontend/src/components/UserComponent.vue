@@ -6,7 +6,7 @@
 
 <template>
   <div class="user-component">
-    <span class="user-username-label">Username:</span>
+    <span class="span-label">Username:</span>
     <span>{{ username }}</span>
   </div>
 </template>

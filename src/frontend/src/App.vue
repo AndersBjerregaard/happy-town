@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import apiUrl from './config';
-console.log('environment: ' + import.meta.env.MODE);
-console.log('api url: ' + apiUrl);
 </script>
 
 <template>
@@ -21,7 +19,8 @@ console.log('api url: ' + apiUrl);
   </div>
   <div class="footer">
     <footer>
-      <p>Footer</p>
+      <span class="span-label">Socials: </span>
+      <span>https://github.com/AndersBjerregaard</span>
     </footer>
   </div>
 </template>
