@@ -23,3 +23,5 @@ In a realistic production envrionment. Compile and package the project using:
 npm run build
 ```
 Then bundle the files into an nginx server or something.
+
+### Integration between Frontend & Backend
