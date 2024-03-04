@@ -1,5 +1,60 @@
 # happy-town
 
+## Tooling
+
+### Rust
+
+Install using rustup (stable):
+```shell
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+Rustc follows a 6 week stable release schedule.
+
+Checking rustc version:
+```shell
+rustc --version
+```
+
+#### Cargo Watch
+
+Installing cargo-watch:
+```shell
+cargo install cargo-watch
+```
+
+Have `cargo-watch` monitor your source code to trigger commands every time a file changes:
+```shell
+cargo watch -x check
+```
+
+The command above will execute `cargo check` every time a file changes.
+
+Commands can even be chained together:
+```shell
+cargo watch -x check -x test -x run
+```
+
+The command above, after a file changes, will execute `cargo check`, if that succeeds, it will run `cargo test`,
+and finally if that also succeeds `cargo run`.
+
+#### Code Coverage
+
+`cargo tarpaulin` can compute code coverage for the application code, ignoring test functions.
+Whose can results can be uploaded metrics to services like [Codecov](https://codecov.io/) or [Coveralls](https://coveralls.io/).
+
+Install:
+```shell
+cargo install cargo-tarpaulin
+```
+
+Compute code coverage:
+```shell
+cargo tarpaulin --ignore-tests
+```
+
+#### TODO: Linting
+
 ## user_service
 
 Build for different profiles:
