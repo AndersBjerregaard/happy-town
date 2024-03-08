@@ -55,6 +55,11 @@ cargo tarpaulin --ignore-tests
 
 #### TODO: Linting
 
+Official rust linter:
+```shell
+rustup component add clippy
+```
+
 ## user_service
 
 Build for different profiles:
