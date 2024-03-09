@@ -60,6 +60,8 @@ Official rust linter:
 rustup component add clippy
 ```
 
+*Yes, Clippy is named after the old Microsoft Word (inf)famous helper mascot*.
+
 ## user_service
 
 Build for different profiles:
