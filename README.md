@@ -38,6 +38,10 @@ cargo watch -x check -x test -x run
 The command above, after a file changes, will execute `cargo check`, if that succeeds, it will run `cargo test`,
 and finally if that also succeeds `cargo run`.
 
+It might be worth including the flag: `--watch-when-idle`. To Ignore events emitted while the commands run.
+
+Additionally, you can include the option: `-i, --ignore <pattern>...`. To Ignore a glob/gitignore-style pattern of files.
+
 #### Code Coverage
 
 `cargo tarpaulin` can compute code coverage for the application code, ignoring test functions.
